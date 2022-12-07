@@ -5,13 +5,16 @@ class Controller{
     }
     add(title,subtitle,desc,price,availability,src){
         addSandwich(title,subtitle,desc,price,availability,src)
+        localStorage.setItem('list', JSON.stringify([...sandwiches]))
     }
     remove(key){
         sandwiches.delete(key)
+        localStorage.setItem('list', JSON.stringify([...sandwiches]))
     }
     availability(title, isAvailable)
     {
         sandwiches.get(title).availability = isAvailable;
+        localStorage.setItem('list', JSON.stringify([...sandwiches]))
     }
 
 }
@@ -30,6 +33,7 @@ class User{
     }
     remove(key){
         this.control.remove(key)
+       
     }
     availability(title, isAvailable){
         this.control.availability(title, isAvailable)
