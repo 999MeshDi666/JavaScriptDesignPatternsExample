@@ -1,0 +1,16 @@
+.btn-group{
+    height: 50px;
+}
+.container_wrapper{
+    padding: 50px 0;   
+}
+.adminForm{
+    width: 100%;
+}
+
+@media (min-width: 786px) {
+    .adminForm{
+        width: 700px;
+    }
+    
+}
