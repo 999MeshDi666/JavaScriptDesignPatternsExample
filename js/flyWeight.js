@@ -9,24 +9,15 @@ class Sandwich {
     }
 }
   
-// const sandwichList = [];
-const addSandwich = (title,subtitle,desc,price,availability,src) => {
-    const sandwich = {
-      ...createSandwich(title,subtitle,desc,price,availability,src),
-    };
-   
-    // sandwichList.push(sandwich)
-    return sandwich;
-};
-// const removeSandwich = (key) =>{
-//   sandwiches.delete(key)
-//   localStorage.setItem('list', JSON.stringify([...sandwiches]))
-// }
-// const sandwichAvailability = (key, isAvailable) =>{
-//   sandwiches.get(key).availability = isAvailable;
-//   localStorage.setItem('list', JSON.stringify([...sandwiches]))
 
-// }
+const addSandwich = (title,subtitle,desc,price,availability,src) => {
+  const sandwich = {
+    ...createSandwich(title,subtitle,desc,price,availability,src),
+  };
+   
+  return sandwich;
+};
+
 const sandwiches = new Map();
 
 const createSandwich = (title,subtitle,desc,price,availability,src) => {

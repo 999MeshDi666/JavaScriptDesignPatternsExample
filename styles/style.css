@@ -1,13 +1,32 @@
+.content_wrapper{
+    padding: 50px 10px;
+}
 .btn-group{
     height: 50px;
+}
+.nav{
+    margin: 10px 0;
+}
+.card{
+    padding: 25px 5px 5px;
+    margin: 10px auto;
 }
 .container_wrapper{
     padding: 50px 0;   
 }
+.items{
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .adminForm{
     width: 100%;
 }
 
+.card-img{
+    width: 150px;
+    margin: 0 auto;
+}
 @media (min-width: 786px) {
     .adminForm{
         width: 700px;
